@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/royal_purple_2"
+    tools:context=".screen.PhoneSignupActivity"
+    android:gravity="center"
+
+    android:id="@+id/llSignupPage">
+
+    <LinearLayout
+        android:id="@+id/llPhone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/txvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:padding="24dp"
+            android:text="signup"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="56dp"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+
+        <TextView
+           android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your Phone Number"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <com.hbb20.CountryCodePicker
+                android:layout_marginRight="5dp"
+                app:ccp_arrowColor="@color/white"
+                app:ccp_contentColor="@color/white"
+                android:id="@+id/ccp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:ccp_showFlag="true"
+                app:ccp_showFullName="false"
+                app:ccp_showNameCode="false"
+                app:ccp_defaultNameCode="US" />
+            <EditText
+
+                android:textColorHint="@color/white"
+                android:padding="20dp"
+                android:id="@+id/edtPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="Phone Number"
+                android:inputType="phone" />
+        </LinearLayout>
+        <ImageButton
+            android:contentDescription="Otp"
+            android:id="@+id/btnPhone"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btn_red_shape"
+            android:src="@drawable/ic_next"
+
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rlOtp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        >
+        <EditText
+            android:id="@+id/edtOtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:gravity="center"
+            android:padding="8dp"
+            android:hint="Enter Otp"
+            android:textColorHint="@color/white"
+            android:background="@drawable/edt_shape"
+            />
+        <ImageButton
+
+            android:id="@+id/btnOtp"
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:background="@drawable/btn_red_shape"
+            android:src="@drawable/ic_next"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+    </RelativeLayout>
+
+    </LinearLayout>
+ <!--
+    <LinearLayout
+        android:id="@+id/llPhone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:drawableLeft="@drawable/ic_phone"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:hint="Phone"
+            android:textColorHint="@color/white"
+            android:background="@drawable/edt_shape"
+            />
+
+        <ImageButton
+            android:id="@+id/btnPhone"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_red_shape"
+            android:src="@drawable/ic_next"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="16dp"
+            android:layout_gravity="end"
+            />
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlOtp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:visibility="gone">
+        <EditText
+            android:id="@+id/edtOtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:gravity="center"
+            android:padding="8dp"
+            android:hint="Otp"
+            android:textColorHint="@color/white"
+            android:background="@drawable/edt_shape"
+            />
+        <ImageButton
+            android:id="@+id/btnOtp"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_red_shape"
+            android:src="@drawable/ic_next"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="16dp"
+            android:layout_alignEnd="@+id/edtOtp"
+            android:layout_below="@+id/edtOtp"/>
+
+    </RelativeLayout>
+    -->
+

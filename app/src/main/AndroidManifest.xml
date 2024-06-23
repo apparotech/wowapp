@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Wowapp"
+        tools:targetApi="31">
+        <activity
+            android:name=".screen.EditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.SigninChoiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.SignupChoiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.MainScreen_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.PhoneSignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.DeleteAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.AccountSettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.SettingsAndPrivacyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.FullScreenAvatarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.FollowListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.FollowActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.CreateAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.CameraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.sinupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.Splash_screen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

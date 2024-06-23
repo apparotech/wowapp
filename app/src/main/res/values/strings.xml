@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">wowapp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="ic_add">"&#10133;"</string>
+
+    <string name="request_account_title">You are anonymous</string>
+
+    <string name="error_existedEmail">Account with this email has existed</string>
+
+    <string name="birthdate_label">Birthdate:</string>
+    <string name="save">Save</string>
+
+    <string name="error_birthdate">Birhdate is invalid or under 16 years old</string>
+    <string name="error_username">Usernames can contain letters, numbers, \"_\" but the first character must not be a number and the minimum length is 3    </string>
+    <string name="exist_username">This username has existed</string>
+    <string name="username_label">Username:</string>
+</resources>

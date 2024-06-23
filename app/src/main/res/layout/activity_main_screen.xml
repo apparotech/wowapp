@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".screen.MainScreen_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:background="@drawable/ic_poster_curver"/>
+
+
+    <Button
+
+        android:id="@+id/phone_btn"
+        android:onClick="signUpPage"
+         android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_marginTop="24sp"
+        android:background="@drawable/custom_dialog2"
+        android:text="Phone"/>
+
+    <com.google.android.gms.common.SignInButton
+
+        android:id="@+id/bt_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="40dp"
+        android:layout_marginBottom="16dp"/>
+
+
+
+</LinearLayout>
